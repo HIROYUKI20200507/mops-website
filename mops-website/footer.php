@@ -1,0 +1,3 @@
+<footer>
+    footerです
+</footer>
