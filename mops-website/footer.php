@@ -1,3 +1,1 @@
-<footer>
-    footerです
-</footer>
+<script defer src="<?php echo get_template_directory_uri(); ?>/dist/main.bundle.js"></script>

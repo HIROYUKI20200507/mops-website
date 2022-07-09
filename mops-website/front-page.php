@@ -4,7 +4,7 @@
 <?php get_header() ?>
 
 <body>
-    <div>front page</div>
+    <div class="test">front page</div>
 
 </body>
 
