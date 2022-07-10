@@ -1,0 +1,28 @@
+.kvTop {
+  position: relative;
+
+  &__bgImage {
+    & > img {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    > h1 {
+      width: max-content;
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-weight: bold;
+      padding: 0 0 3px 5px;
+      border-bottom: #ffffff 2px solid;
+    }
+  }
+}

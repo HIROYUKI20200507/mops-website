@@ -1,0 +1,32 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.75rem;
+  z-index: 9999;
+
+  &__logo {
+    max-width: 100px;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    > li:last-child {
+      > a {
+        padding: 10px;
+        border: #ffffff 1px solid;
+      }
+    }
+  }
+}

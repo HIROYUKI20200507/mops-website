@@ -1,3 +1,3 @@
-import "../scss/style.scss";
-
-console.log("test");
+import '../scss/style.scss'
+import '../scss/navigation.scss'
+import '../scss/front-page.scss'
