@@ -50,13 +50,79 @@
             他にもお客様の事業をスケールさせるための開発、<br>
             コンサルティング etc.<br>
           </p>
-          <a href="https://kajimama.jp/">Learn More</a>
+          <div class="service__item--button">
+            <a href="https://kajimama.jp/">Learn More</a>
+          </div>
         </li>
         <li>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service.png" alt="">
         </li>
       </ul>
     </section>
+
+    <section class="news">
+      <div class="news__title">
+        <h2>NEWS</h2>
+      </div>
+      <ul class="news__item">
+        <li class="news__list">
+          <div class="news__list--title">
+            <span>2022/02/01</span>
+            <strong>プレスリリース</strong>
+          </div>
+          <div class="news__list--description">
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+          </div>
+        </li>
+        <li class="news__list">
+          <div class="news__list--title">
+            <span>2022/02/01</span>
+            <strong>プレスリリース</strong>
+          </div>
+          <div class="news__list--description">
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+          </div>
+        </li>
+        <li class="news__list">
+          <div class="news__list--title">
+            <span>2022/02/01</span>
+            <strong>プレスリリース</strong>
+          </div>
+          <div class="news__list--description">
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
+          </div>
+        </li>
+      </ul>
+      <div class="news__button">
+        <a href="#">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <section class="recruit">
+      <div class="recruit__bg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit.jpg" alt="">
+      </div>
+      <div class="recruit__item">
+        <h2>RECRUIT</h2>
+        <p>
+          ただ今、家事代行マッチングサービス・カジママにて多くの職種を募集中（業務委託、インターン）です。<br>
+          <br>
+          急成長中ですので、色んな経験ができる面白いフェーズです。
+        </p>
+        <div class="recruit__item--button">
+          <a href="https://kajimama.jp/">See More</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
 </body>
