@@ -123,10 +123,34 @@
       </div>
     </section>
 
+    <section class="company">
+      <div class="company__bg"></div>
+      <div class="company__title">
+        <h2>company</h2>
+      </div>
+      <dl class="company__description">
+        <dt>会社名</dt>
+        <dd>株式会社MOPS</dd>
+        <dt>設立年月日</dt>
+        <dd>2013年1月4日</dd>
+        <dt>所在地</dt>
+        <dd>
+          〒151-0053<br>
+          東京都渋谷区代々木4-30-5 フェニックス西参道タワー9F
+        </dd>
+      </dl>
+    </section>
+
+    <section class="map">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7391019374713!2d139.68826461524688!3d35.6834255801938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f32d5a1bfffd%3A0x3801fae59590b19f!2z44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yU5LiB55uu77yT77yQ4oiS77yVIOODleOCp-ODi-ODg-OCr-OCueilv-WPgumBk-OCv-ODr-ODvCA5Zg!5e0!3m2!1sja!2sjp!4v1658131568923!5m2!1sja!2sjp"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
   </main>
-
+  <?php get_footer(); ?>
 </body>
-
-<?php get_footer(); ?>
-
 </html>

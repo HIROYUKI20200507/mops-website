@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  padding: 100px 0;
+
+  .logoFooter {
+    width: 50%;
+    padding: 100px;
+    border-right: 1px solid #5e5e5e;
+  }
+  .navFooter {
+    width: 50%;
+    padding: 100px;
+
+    &__item {
+      & > li {
+        display: block;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
