@@ -1,0 +1,51 @@
+$defaultMarginTop: 10rem;
+$defaultPadding: 0 2rem;
+
+.kvRecruit {
+  position: relative;
+
+  &__bgImage {
+    & > img {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    > h1 {
+      width: max-content;
+      text-align: center;
+      color: #ffffff;
+      font-size: 2.2rem;
+      font-weight: bold;
+      padding: 0 0 3px 5px;
+      border-bottom: #ffffff 2px solid;
+    }
+  }
+}
+
+.RecruitmentType {
+  padding: $defaultPadding;
+
+  &__title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    font-weight: bold;
+
+    & > h2 {
+      display: inline-block;
+      border-bottom: 2px solid #008a0e;
+    }
+  }
+
+  &__description {
+    text-align: center;
+  }
+}

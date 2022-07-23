@@ -1,4 +1,5 @@
-import '../scss/style.scss'
 import '../scss/footer.scss'
 import '../scss/navigation.scss'
+import '../scss/breadcrumb.scss'
 import '../scss/front-page.scss'
+import '../scss/recruit.scss'

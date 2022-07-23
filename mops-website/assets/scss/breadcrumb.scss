@@ -1,0 +1,11 @@
+.breadcrumb {
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 768px;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
