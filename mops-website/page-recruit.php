@@ -68,35 +68,35 @@
       <div class="recruitDetail__detail">
         <h3>応募資格・条件</h3>
         <div class="recruitDetail__detail--description">
-          高校卒以上 / 経験者のみ募集
-          ■求める人材：
-          ・Vue.js Nuxt.jsを使った開発経験。
-          ・slack、チャットワーク、AWS、GitHub、Google Workspaceの使用経験。
-          ・向上心を持って上記スキルをキャッチアップできる方。
-          ・コミュニケーション能力 口下手、無口の人でも問題なし。
+          高校卒以上 / 経験者のみ募集<br>
+          <strong>■求める人材</strong><br>
+          ・Vue.js Nuxt.jsを使った開発経験。<br>
+          ・slack、チャットワーク、AWS、GitHub、Google Workspaceの使用経験。<br>
+          ・向上心を持って上記スキルをキャッチアップできる方。<br>
+          ・コミュニケーション能力 口下手、無口の人でも問題なし。<br>
           <br>
-          【以下の方は優遇いたします】
-          ・独学でもWebサービス、アプリの制作経験（自作でも可）のある方。世の中の問題を解決したいという意欲がある方。
+          <strong>【以下の方は優遇いたします】</strong> <br>
+          ・独学でもWebサービス、アプリの制作経験（自作でも可）のある方。世の中の問題を解決したいという意欲がある方。<br>
           <br>
-          ■歓迎スキル
-          ・デザインシステムに関する基礎知識、構築経験
-          ・CtoCサービスでの開発経験
-          ・UXリサーチの実務経験
-          ・定性、定量分析からのサービスの改善経験
-          ・サービスブランディングの経験
+          <strong>■歓迎スキル</strong><br>
+          ・デザインシステムに関する基礎知識、構築経験<br>
+          ・CtoCサービスでの開発経験<br>
+          ・UXリサーチの実務経験<br>
+          ・定性、定量分析からのサービスの改善経験<br>
+          ・サービスブランディングの経験<br>
         </div>
       </div>
 
       <div class="recruitDetail__detail">
         <h3>待遇・福利厚生</h3>
         <div class="recruitDetail__detail--description">
-            ■待遇：
-          ・時給1,300円以上
-          ・週1日からOK
+            <strong>■待遇</strong><br>
+          ・時給1,300円以上<br>
+          ・週1日からOK<br>
           <br>
-          ■福利厚生：
-          ・テレワーク/在宅OK
-          ・服装自由
+          <strong>■福利厚生</strong><br>
+          ・テレワーク/在宅OK<br>
+          ・服装自由<br>
         </div>
       </div>
 
