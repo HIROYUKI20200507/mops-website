@@ -20,22 +20,23 @@
     get_template_part('template-parts/breadcrumb', null, $page_name);
     ?>
 
-    <section class="contactDetail">
-      <div class="contactDetail__detail">
-        <h1>お問い合わせ</h1>
+    <section class="newsDetail">
+      <div class="newsDetail__detail">
 
-        <!-- TODO: contact form 7 -->
         <?php
         $args = ['posts_per_page' => 5];
         $postslist = get_posts($args);
+
         foreach ($postslist as $post):
           setup_postdata($post); ?>
-            <div>
-                <?php the_date(); ?> 日付
-                <br />
-                <?php the_title(); ?> タイトル
+            <a href="<?php the_permalink($post); ?>" class="newsDetail__detail--contents">
+              <h3>
+                <?php the_date('Y/m/d'); ?> <?php the_title(); ?>
+              </h3>
+              <div>
                 <?php the_excerpt(); ?>
-            </div>
+              </div>
+            </a>
         <?php
         endforeach;
         wp_reset_postdata();
