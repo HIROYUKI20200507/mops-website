@@ -15,7 +15,7 @@
       </div>
     </section>
 
-    <section class="philosophy">
+    <section class="philosophy" id="philosophy">
       <ul class="philosophy__item">
         <li>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tokyo.jpg" alt="">
@@ -38,7 +38,7 @@
       </ul>
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
       <div class="service__bg"></div>
       <ul class="service__item">
         <li>
@@ -60,7 +60,7 @@
       </ul>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
       <div class="news__title">
         <h2>NEWS</h2>
       </div>
@@ -106,7 +106,7 @@
       </div>
     </section>
 
-    <section class="recruit">
+    <section class="recruit" id="recruit">
       <div class="recruit__bg">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit.jpg" alt="">
       </div>
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section class="company">
+    <section class="company" id="company">
       <div class="company__bg"></div>
       <div class="company__title">
         <h2>company</h2>
@@ -141,7 +141,7 @@
       </dl>
     </section>
 
-    <section class="map">
+    <section class="map" id="map">
       <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7391019374713!2d139.68826461524688!3d35.6834255801938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f32d5a1bfffd%3A0x3801fae59590b19f!2z44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yU5LiB55uu77yT77yQ4oiS77yVIOODleOCp-ODi-ODg-OCr-OCueilv-WPgumBk-OCv-ODr-ODvCA5Zg!5e0!3m2!1sja!2sjp!4v1658131568923!5m2!1sja!2sjp"
       style="border:0;"

@@ -7,19 +7,19 @@
   </div>
   <ul class="navigation__item">
     <li>
-      <a href="#SERVICE">SERVICE</a>
+      <a href="#service">SERVICE</a>
     </li>
     <li>
-      <a href="#NEWS">NEWS</a>
+      <a href="#news">NEWS</a>
     </li>
     <li>
-      <a href="#RECRUIT">RECRUIT</a>
+      <a href="#recruit">RECRUIT</a>
     </li>
     <li>
-      <a href="#COMPANY">COMPANY</a>
+      <a href="#company">COMPANY</a>
     </li>
     <li>
-      <a href="#お問い合わせ">お問い合わせ</a>
+      <a href="#contact">お問い合わせ</a>
     </li>
   </ul>
 </nav>
