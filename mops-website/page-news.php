@@ -22,25 +22,36 @@
 
     <section class="newsDetail">
       <div class="newsDetail__detail">
-
         <?php
-        $args = ['posts_per_page' => 5];
-        $postslist = get_posts($args);
-
-        foreach ($postslist as $post):
-          setup_postdata($post); ?>
-            <a href="<?php the_permalink($post); ?>" class="newsDetail__detail--contents">
-              <h3>
-                <?php the_date('Y/m/d'); ?> <?php the_title(); ?>
-              </h3>
-              <div>
-                <?php the_excerpt(); ?>
-              </div>
-            </a>
-        <?php
-        endforeach;
-        wp_reset_postdata();
+        $args = [
+          'post_type' => 'news',
+          'posts_per_page' => 10,
+        ];
+        $my_query = new WP_Query($args);
         ?>
+      <?php
+      if ($my_query->have_posts()): ?>
+        <ul>
+          <?php while ($my_query->have_posts()):
+            $my_query->the_post(); ?>
+            <li>
+              <a href="<?php the_permalink($post); ?>" class="newsDetail__detail--contents">
+                <h3>
+                  <?php the_date('Y/m/d'); ?> <?php the_title(); ?>
+                </h3>
+                <div>
+                  <?php the_excerpt(); ?>
+                </div>
+              </a>
+            </li>
+          <?php
+          endwhile; ?>
+        </ul>
+      <?php else: ?>
+        <p>まだ投稿がありません。</p>
+      <?php endif;
+      wp_reset_postdata();
+      ?>
       </div>
     </section>
   </main>

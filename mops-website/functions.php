@@ -1,7 +1,6 @@
 <?php
 
 // https://www.flapism.jp/wordpress/57/を参考
-add_action('init', 'codex_custom_init');
 function codex_custom_init()
 {
   $labels = [
@@ -29,5 +28,6 @@ function codex_custom_init()
 
   register_post_type('news', $args);
 }
+add_action('init', 'codex_custom_init');
 
 ?>

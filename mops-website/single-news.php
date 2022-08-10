@@ -1,28 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
 <?php get_header(); ?>
-
-  <?php while (have_posts()):
-    the_post(); ?>
-
-  <?php $terms = get_the_terms($post->ID, 'news'); ?>
-
-  <div>test</div>
-  <article>
-    <header>
-      <h1 class="ttl"><?php the_title(); ?></h1>
-      <time datetime="the_time( 'Y-m-d' )"><?php the_time('Y.m.d'); ?></time>
-
-      <?php if (!empty($terms)): ?>
-      <?php foreach ($terms as $term): ?>
-      <span class="category"><?php echo $term->name; ?></span>
-      <?php endforeach; ?>
-      <?php endif; ?>
-
-      </header>
-      <div class="edit-area">
-        <?php the_content(); ?>
+  <main>
+    <section class="kvNews">
+      <div class="kvNews__bgImage">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-news.png" alt="">
       </div>
-    </article>
-  <?php
-  endwhile; ?>
+      <div class="kvNews__text">
+        <h1>NEWS</h1>
+      </div>
+    </section>
 
-  <?php get_footer(); ?>
+    <section class="newsDetail">
+      <div class="newsDetail__detail">
+        <?php while (have_posts()):
+          the_post(); ?>
+          <?php the_title(); ?>
+          <?php the_content(); ?>
+        <?php
+        endwhile; ?>
+        </main>
+      </div>
+    </section>
+
+<?php get_footer(); ?>
+</body>
+</html>
