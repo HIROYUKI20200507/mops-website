@@ -5,18 +5,42 @@
   <main>
     <section class="kvNews">
       <div class="kvNews__bgImage">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-news.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/news-detail.png" alt="">
       </div>
       <div class="kvNews__text">
         <h1>NEWS</h1>
       </div>
     </section>
 
-    <section class="newsDetail">
-      <div class="newsDetail__detail">
+    <section class="breadcrumb">
+      <ul class="breadcrumb__items">
+        <li>
+          <a href="/">トップページ</a>
+        </li>
+        <li>
+          <div>></div>
+        </li>
+        <li>
+          <a href="/news">NEWS</a>
+        </li>
+        <li>
+          <div>></div>
+        </li>
         <?php while (have_posts()):
           the_post(); ?>
-          <?php the_title(); ?>
+        <li>
+          <div><?php the_title(); ?></div>
+        </li>
+        <?php
+        endwhile; ?>
+      </ul>
+    </section>
+
+    <section class="newsSingle">
+      <div class="newsSingle__detail">
+        <?php while (have_posts()):
+          the_post(); ?>
+          <div class="newsSingle__detail--title"><?php the_title(); ?></div>
           <?php the_content(); ?>
         <?php
         endwhile; ?>

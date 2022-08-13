@@ -65,42 +65,36 @@
         <h2>NEWS</h2>
       </div>
       <ul class="news__item">
-        <li class="news__list">
-          <div class="news__list--title">
-            <span>2022/02/01</span>
-            <strong>プレスリリース</strong>
-          </div>
-          <div class="news__list--description">
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-          </div>
-        </li>
-        <li class="news__list">
-          <div class="news__list--title">
-            <span>2022/02/01</span>
-            <strong>プレスリリース</strong>
-          </div>
-          <div class="news__list--description">
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-          </div>
-        </li>
-        <li class="news__list">
-          <div class="news__list--title">
-            <span>2022/02/01</span>
-            <strong>プレスリリース</strong>
-          </div>
-          <div class="news__list--description">
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-            ここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入りますここにコメントが入ります
-          </div>
-        </li>
+          <?php
+          $args = [
+            'post_type' => 'news',
+            'posts_per_page' => 3,
+          ];
+          $my_query = new WP_Query($args);
+          ?>
+        <?php
+        if ($my_query->have_posts()): ?>
+            <?php while ($my_query->have_posts()):
+              $my_query->the_post(); ?>
+                  <li class="news__list">
+                    <div class="news__list--title">
+                      <span><?php the_date('Y/m/d'); ?></span>
+                      <strong><?php the_title(); ?></strong>
+                    </div>
+                    <div class="news__list--description">
+                      <?php the_excerpt(); ?>
+                    </div>
+                  </li>
+            <?php
+            endwhile; ?>
+        <?php else: ?>
+          <li>まだ投稿がありません。</li>
+        <?php endif;
+        wp_reset_postdata();
+        ?>
       </ul>
       <div class="news__button">
-        <a href="#">
+        <a href="/news">
           Learn More
         </a>
       </div>
@@ -118,7 +112,7 @@
           急成長中ですので、色んな経験ができる面白いフェーズです。
         </p>
         <div class="recruit__item--button">
-          <a href="https://kajimama.jp/">See More</a>
+          <a target="_blank" href="https://kajimama.jp/">See More</a>
         </div>
       </div>
     </section>
