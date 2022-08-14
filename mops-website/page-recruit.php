@@ -32,73 +32,59 @@
         </p>
       </div>
       <div class="recruitmentType__items">
-        <ul>
           <!--MEMO: cssで自動改行をするために半角スペースを開ける -->
-          <li>
-            <a href="">フロントエンド エンジニア職</a>
-          </li>
-          <li>
-            <a href="">バックエンド エンジニア職</a>
-          </li>
-          <li>
-            <a href="">運営事務</a>
-          </li>
+        <?php
+        $args = [
+          'post_type' => 'recruit',
+        ];
+        $my_query = new WP_Query($args);
+        ?>
+      <?php
+      if ($my_query->have_posts()): ?>
+        <ul>
+          <?php while ($my_query->have_posts()):
+            $my_query->the_post(); ?>
+            <li>
+              <a href="#<?php the_title(); ?>">
+                <?php the_title(); ?>
+              </a>
+            </li>
+          <?php
+          endwhile; ?>
+          <?php else: ?>
+            <p>まだ投稿がありません。</p>
+          <?php endif;
+      wp_reset_postdata();
+      ?>
         </ul>
       </div>
     </section>
 
     <section class="recruitDetail">
-      <div class="recruitDetail__title">
-        <h2>フロントエンドエンジニア職</h2>
-      </div>
+        <?php
+        $args = [
+          'post_type' => 'recruit',
+        ];
+        $my_query = new WP_Query($args);
+        ?>
+      <?php
+      if ($my_query->have_posts()): ?>
+          <?php while ($my_query->have_posts()):
+            $my_query->the_post(); ?>
+            <div class="recruitDetail__title">
+              <h2><?php the_title(); ?></h2>
+            </div>
 
-      <div class="recruitDetail__detail">
-        <h3>仕事内容</h3>
-        <div class="recruitDetail__detail--description">
-          ０→１フェーズが好きな方にはぴったりです。
-          フロントエンドエンジニアとしてさまざまなデザイン業務をお任せいたします。
-          <br>
-          成長フェーズのWebサービスなので、事業のステージに合わせて貴重な経験が可能です。
-          上流から下流まで様々な工程の理解を高めることができます。
-          <br>
-          フロントエンドはもちろん、事業に興味がある方にピッタリのお仕事です。
-        </div>
-      </div>
-
-      <div class="recruitDetail__detail">
-        <h3>応募資格・条件</h3>
-        <div class="recruitDetail__detail--description">
-          高校卒以上 / 経験者のみ募集<br>
-          <strong>■求める人材</strong><br>
-          ・Vue.js Nuxt.jsを使った開発経験。<br>
-          ・slack、チャットワーク、AWS、GitHub、Google Workspaceの使用経験。<br>
-          ・向上心を持って上記スキルをキャッチアップできる方。<br>
-          ・コミュニケーション能力 口下手、無口の人でも問題なし。<br>
-          <br>
-          <strong>【以下の方は優遇いたします】</strong> <br>
-          ・独学でもWebサービス、アプリの制作経験（自作でも可）のある方。世の中の問題を解決したいという意欲がある方。<br>
-          <br>
-          <strong>■歓迎スキル</strong><br>
-          ・デザインシステムに関する基礎知識、構築経験<br>
-          ・CtoCサービスでの開発経験<br>
-          ・UXリサーチの実務経験<br>
-          ・定性、定量分析からのサービスの改善経験<br>
-          ・サービスブランディングの経験<br>
-        </div>
-      </div>
-
-      <div class="recruitDetail__detail">
-        <h3>待遇・福利厚生</h3>
-        <div class="recruitDetail__detail--description">
-            <strong>■待遇</strong><br>
-          ・時給1,300円以上<br>
-          ・週1日からOK<br>
-          <br>
-          <strong>■福利厚生</strong><br>
-          ・テレワーク/在宅OK<br>
-          ・服装自由<br>
-        </div>
-      </div>
+            <div class="recruitDetail__detail">
+              <?php the_content(); ?>
+            </div>
+          <?php
+          endwhile; ?>
+          <?php else: ?>
+            <p>まだ投稿がありません。</p>
+          <?php endif;
+      wp_reset_postdata();
+      ?>
 
 
     </section>

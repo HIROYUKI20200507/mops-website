@@ -68,13 +68,12 @@ $defaultPadding: 0 2rem;
         height: 50px;
         padding: 10px 5px;
         border: 1px solid #008a0e;
-        transition: 0.5s;
+        transition: 0.3s;
         box-shadow: 0px 3px 10px -3px rgb(0 0 0 / 50%);
         cursor: pointer;
 
         &:hover {
-          border: none;
-          background-color: #009b0fb4;
+          background-color: #008a0e;
           color: #ffffff;
         }
 
@@ -84,7 +83,6 @@ $defaultPadding: 0 2rem;
           align-items: center;
           justify-content: center;
           text-align: center;
-          max-width: 100px;
           font-weight: bold;
           word-break: break-all;
         }
@@ -99,7 +97,7 @@ $defaultPadding: 0 2rem;
   margin: 0 auto;
 
   &__title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #8e8e8e;
     font-size: 2rem;
@@ -107,16 +105,54 @@ $defaultPadding: 0 2rem;
 
   &__detail {
     margin-bottom: 3rem;
-    & > h3 {
-      margin-bottom: 1rem;
-      padding-left: 1rem;
-      font-size: 1.6rem;
-      border-left: 5px solid #008a0e;
+    line-height: 1.6rem;
+    // MEMO: 強制的にwidthを指定する
+    div {
+      max-width: 800px !important;
     }
 
-    &--description {
-      word-break: keep-all;
-      line-height: 2rem;
+    h1 {
+      margin: 1.5rem 0 1rem;
+      padding-left: 0.7rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-left: 8px solid #008a0e;
+    }
+
+    h2 {
+      margin: 1.2rem 0 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-bottom: 1px solid #008a0e;
+    }
+
+    h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    h4 {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+
+    h5 {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+
+    // MEMO: 画面幅を超えるのを防ぐため強制的に指定
+    img {
+      width: 100%;
+      max-width: 800px !important;
+      max-height: 100vh;
+      object-fit: cover;
     }
   }
 }
