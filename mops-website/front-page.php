@@ -3,9 +3,9 @@
 
 <?php get_header(); ?>
 
-<body>
+<body class="drawer drawer--left">
   <?php get_template_part('template-parts/navigation'); ?>
-  <main>
+    <main>
     <section class="kvTop">
       <div class="kvTop__bgImage">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-image.jpg" alt="">
