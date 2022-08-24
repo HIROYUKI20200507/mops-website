@@ -11,6 +11,10 @@
   font-size: 0.75rem;
   z-index: 9999;
 
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
+
   &__logo {
     max-width: 100px;
     width: 100%;

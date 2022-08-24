@@ -11,7 +11,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-image.jpg" alt="">
       </div>
       <div class="kvTop__text">
-        <h1>主婦層の生きがい・やりがいをサポートする。</h1>
+        <h1>主婦層の<br class="sp-only">生きがい・やりがいを<br class="sp-only">サポートする。</h1>
       </div>
     </section>
 
@@ -21,15 +21,15 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tokyo.jpg" alt="">
         </li>
         <li>
-          <h2>理念</h2>
+          <h2><span>理念</span></h2>
           <p>
-            私たちの企業名・MOPSは<br>
+            私たちの企業名・MOPSは<br class="pc-only">
             「Support Power Of Mother」の頭文字から取っています。<br>
             <br>
-            それは「主婦層の生きがい・やりがいを応援する」という<br>
+            それは「主婦層の生きがい・やりがいを応援する」という<br class="pc-only">
             企業理念に基づくものです。<br>
             <br>
-            MOPSでは皆さまのライフスタイルの実現や社会問題の解決を<br>
+            MOPSでは皆さまのライフスタイルの実現や社会問題の解決を<br class="pc-only">
             目指したWebサービス、事業に日々邁進しております。<br>
             <br>
             私たちは限りある時間の中で全力で課題に取り組みます。<br>
@@ -42,7 +42,8 @@
       <div class="service__bg"></div>
       <ul class="service__item">
         <li>
-          <h2>サービス</h2>
+          <img class="sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/images/service.png" alt="">
+          <h2><span>サービス</span></h2>
           <p>
             家事代行マッチングサービス<br>
             カジママの運営（https://kajimama.jp/）。<br>
@@ -55,7 +56,7 @@
           </div>
         </li>
         <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service.png" alt="">
+          <img class="pc-only" src="<?php echo get_template_directory_uri(); ?>/assets/images/service.png" alt="">
         </li>
       </ul>
     </section>
@@ -105,7 +106,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit.jpg" alt="">
       </div>
       <div class="recruit__item">
-        <h2>RECRUIT</h2>
+        <h2><span>RECRUIT</span></h2>
         <p>
           ただ今、家事代行マッチングサービス・カジママにて多くの職種を募集中（業務委託、インターン）です。<br>
           <br>

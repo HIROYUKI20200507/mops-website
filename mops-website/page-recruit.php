@@ -71,7 +71,7 @@
       if ($my_query->have_posts()): ?>
           <?php while ($my_query->have_posts()):
             $my_query->the_post(); ?>
-            <div class="recruitDetail__title">
+            <div class="recruitDetail__title" id="<?php the_title(); ?>">
               <h2><?php the_title(); ?></h2>
             </div>
 
