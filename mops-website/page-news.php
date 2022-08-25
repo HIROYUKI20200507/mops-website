@@ -4,6 +4,7 @@
 <?php get_header(); ?>
 
 <body>
+  <?php get_template_part('template-parts/navigation'); ?>
   <main>
     <section class="kvNews">
       <div class="kvNews__bgImage">

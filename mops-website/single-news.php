@@ -2,6 +2,7 @@
 <html lang="ja">
 
 <?php get_header(); ?>
+  <?php get_template_part('template-parts/navigation'); ?>
   <main>
     <section class="kvNews">
       <div class="kvNews__bgImage">

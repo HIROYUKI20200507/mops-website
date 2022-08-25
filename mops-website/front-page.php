@@ -3,7 +3,7 @@
 
 <?php get_header(); ?>
 
-<body class="drawer drawer--left">
+<body>
   <?php get_template_part('template-parts/navigation'); ?>
     <main>
     <section class="kvTop">
