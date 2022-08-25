@@ -113,7 +113,7 @@
           急成長中ですので、色んな経験ができる面白いフェーズです。
         </p>
         <div class="recruit__item--button">
-          <a target="_blank" href="https://kajimama.jp/">See More</a>
+          <a href="/recruit">See More</a>
         </div>
       </div>
     </section>
