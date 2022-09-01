@@ -35,8 +35,7 @@
 <nav class="navigation">
   <div class="navigation__logo">
     <a href="/">
-      <!-- ロゴ画像を挿入 -->
-      <img src="#" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/mops_logo_icon.png" alt="">
     </a>
   </div>
   <ul class="navigation__item">
@@ -57,5 +56,3 @@
     </li>
   </ul>
 </nav>
-
-
