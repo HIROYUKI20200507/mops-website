@@ -168,6 +168,14 @@
   transform: rotate(-45deg);
 }
 
+.black {
+  color: #000 !important;
+}
+
+.border-black {
+  border-color: #000 !important;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -180,14 +188,14 @@
   color: #ffffff;
   font-size: 0.75rem;
   z-index: 9999;
+  transition: 0.1s;
 
   @media screen and (max-width: 425px) {
     display: none;
   }
 
   &__logo {
-
-    & > a {
+  & > a {
       position: absolute;
       top: 0;
       left: 0;
@@ -209,6 +217,7 @@
       > a {
         padding: 10px;
         border: #ffffff 1px solid;
+        transition: 0.1s;
       }
     }
   }

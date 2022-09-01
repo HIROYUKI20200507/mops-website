@@ -52,7 +52,7 @@
       <a href="/#company">COMPANY</a>
     </li>
     <li>
-      <a href="/#contact">お問い合わせ</a>
+      <a class="navigation__item--contact" href="/#contact">お問い合わせ</a>
     </li>
   </ul>
 </nav>
