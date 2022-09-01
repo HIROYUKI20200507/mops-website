@@ -13,12 +13,22 @@ footer {
     padding: 100px;
     border-right: 1px solid #5e5e5e;
 
+    img {
+        max-width: 300px;
+        width: 100%;
+      }
+
     @media screen and (max-width: 425px) {
       width: 100%;
       text-align: center;
       padding: 10px;
       border: none;
       font-weight: bold;
+
+      img {
+        max-width: 100px;
+        width: 100%;
+      }
     }
   }
   .navFooter {

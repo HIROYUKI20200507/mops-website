@@ -1,7 +1,9 @@
 <header class="header sp-only">
   <div class="header__inner">
     <h1 class="header__title header-title">
-      <a href="#">ロゴ</a>
+      <a href="/">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/mops_logo_icon.png" alt="">
+      </a>
     </h1>
 
     <nav class="header__nav nav" id="js-nav">
