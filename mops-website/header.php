@@ -7,4 +7,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/main.bundle.css">
     <!-- drawer.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">    <title>株式会社MOPS | 公式ホームページです</title>
+
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/logo/mops_logo_favicon.png">
 </head>

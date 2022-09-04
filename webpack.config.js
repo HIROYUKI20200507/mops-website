@@ -1,8 +1,8 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const enabledSourceMap = process.env.NODE_ENV !== "production";
+const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const enabledSourceMap = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
