@@ -7,15 +7,15 @@ const enabledSourceMap = process.env.NODE_ENV !== "production";
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
   // development に設定するとソースマップ有効でJSファイルが出力される
-  mode: "development",
-  devtool: "source-map",
+  mode: 'development',
+  devtool: 'source-map',
   entry: {
     // コンパイル対象のファイルを指定
-    main: "./mops-website/assets/js/all-dump.js",
+    main: './mops-website/assets/js/all-dump.js',
   },
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./mops-website/dist"),
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './mops-website/dist'),
     clean: true,
   },
   module: {
@@ -24,20 +24,24 @@ module.exports = {
         test: /\.js$/,
         use: [
           {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
-              presets: ["@babel/preset-env"],
+              presets: ['@babel/preset-env'],
             },
           },
         ],
       },
       {
         test: /\.(png|jpg|jpeg)/,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "images/[name][ext]",
+          filename: 'images/[name][ext]',
         },
-        use: [],
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
       {
         test: /\.scss$/,
@@ -46,7 +50,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               url: false,
               sourceMap: enabledSourceMap,
@@ -54,19 +58,19 @@ module.exports = {
             },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               sourceMap: true,
               postcssOptions: {
                 plugins: [
                   // ベンダープレフィックスを自動付与する
-                  ["autoprefixer", { grid: true }],
+                  ['autoprefixer', { grid: true }],
                 ],
               },
             },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
           },
         ],
       },
@@ -74,7 +78,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].bundle.css",
+      filename: '[name].bundle.css',
     }),
   ],
   optimization: {
@@ -94,5 +98,5 @@ module.exports = {
       }),
     ],
   },
-  target: ["web", "es5"],
-};
+  target: ['web', 'es5'],
+}
