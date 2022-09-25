@@ -36,6 +36,11 @@ $defaultPadding: 0 2rem;
   max-width: 1024px;
   margin: 0 auto;
 
+  @media screen and (max-width: 425px) {
+    padding: 0rem;
+    margin: 0 20px;
+  }
+
   &__title {
     margin-bottom: 5rem;
     padding-bottom: 1rem;
@@ -49,6 +54,10 @@ $defaultPadding: 0 2rem;
     &--contents {
       display: block;
       padding: 2rem 3rem;
+
+      @media screen and (max-width: 425px) {
+        padding: 1rem;
+      }
     }
 
     h3 {
@@ -76,7 +85,12 @@ $defaultPadding: 0 2rem;
   margin: 5rem auto;
 
   &__detail {
-    line-height: 2rem;
+    line-height: 2.2rem;
+
+    @media screen and (max-width: 425px) {
+      padding: 0rem;
+      margin: 0 20px;
+    }
 
     &--title {
       font-weight: bold;

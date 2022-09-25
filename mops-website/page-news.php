@@ -24,7 +24,8 @@
       <div class="newsDetail__detail">
         <?php
         $args = [
-          'post_type' => 'news',
+          'post_type' => ['news', 'info', 'post'],
+          'orderby' => 'post_date',
           'posts_per_page' => 10,
         ];
         $my_query = new WP_Query($args);

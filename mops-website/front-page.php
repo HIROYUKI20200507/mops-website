@@ -66,13 +66,14 @@
         <h2>NEWS</h2>
       </div>
       <ul class="news__item">
-          <?php
-          $args = [
-            'post_type' => 'news',
-            'posts_per_page' => 3,
-          ];
-          $my_query = new WP_Query($args);
-          ?>
+        <?php
+        $args = [
+          'post_type' => ['news', 'info', 'post'],
+          'orderby' => 'post_date',
+          'posts_per_page' => 5,
+        ];
+        $my_query = new WP_Query($args);
+        ?>
         <?php
         if ($my_query->have_posts()): ?>
             <?php while ($my_query->have_posts()):
